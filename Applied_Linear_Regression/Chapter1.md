@@ -140,8 +140,7 @@ Partial diffentiation with respect to the 2 parameters b0 and b1 gives 2 equatio
 The value 
 				Yihat = b0 + b1xi
 				
-This value is the point estimate for Y because it is the means response. Mean of the P(Y|X) corresponding for a particular X of interest.
-
+This value is the point estimate for Y because it is the means response. Mean of the P(Y|X) corresponding for a particular X of interest
 
 **Properties of the Regression Line **
 
@@ -158,7 +157,7 @@ This value is the point estimate for Y because it is the means response. Mean of
 
 ### Estimating the Error Term's variance
 
-** Point Estimate of σ^2
+** Point Estimate of σ^2**
 
 For a single population whose mean is unknown, the sample variance s^2 is an unbiased estimate of σ^2
 
@@ -200,22 +199,22 @@ The regression model is:
 				
 where εi are independent with 	N\(0,σ^2\)
 
-
-**Estimation of parameters of regression by MLE **
+**Estimation of parameters of regression by MLE**
 
 The error terms εi = (Yi - β0 + β1xi) are now normally distributed around 0 with variance σ^2
 
 
-so for              ei = \(1/sqrt\(2π\)σ \)* e^-\(\(Yi - β0 + β1xi\)/σ\)^2
+so for              
+				ei = (1/sqrt(2π)σ )* e^-((Yi - β0 + β1xi)/σ)^2
 
 
 Our objective is to minimize the errors for all the samples we have collected. This can be achieved by mutiplication of all the errors and minimizing it
 
 This would translate to 
 
-                 L(ei) = π \[\(1/sqrt\(2π\)σ \)\* e^-\(\(Yi - β0 + β1xi\)/σ\)^2\] for all N observations
+                 L(ei) = π [(1/sqrt(2π)σ )* e^-((Yi - β0 + β1xi)/σ)^2] for all N observations
 						
-					   = \(1/\(2πσ\)^n\/2\) \*  e^ -\(1/2σ^2) ∑ (Yi- β0 + β1xi)^2
+					   = (1/(2πσ)^n/2) *  e^-(1/2σ^2) ∑ (Yi- β0 + β1xiS)^2
 
 Taking the log of this equation makes the math easier
 
