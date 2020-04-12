@@ -138,9 +138,4 @@ Density function can be represented as a matrix form.
 			Applying the Inverse 
 			
 						 b  = Inverse(Transpose(X)X) Transpose(X) Y
-						 
-						 
-						 
-						 
-
-			
+						
