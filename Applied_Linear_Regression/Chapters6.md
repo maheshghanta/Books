@@ -153,3 +153,39 @@ In the case of multiple linear regression the F test test for all the coefficien
 
 				If F* <= F(1-α;p-1;n-p) dont reject H0
 				If F* >  F(1-α;p-1;n-p) reject H0
+				
+
+**Coefficient of Multiple Determination**
+					
+					Rsquare =  SSR/SSTO
+					
+					
+					Adjusted Rsquare = 1 - MSE/MST0 = 1 - (SSE/n-p) /(SSTO/n-1)
+
+
+**Interval Estimate of βk**
+
+				H0: βk =0
+				Ha: βk !=0
+				
+				Using t statistic:
+				t* = bk/s{bk}
+				
+				If |t*| <= t(l - α/2; n - p) we dont reject H0.
+				
+**Joint Inference**
+
+Using Bonferroni procedure we can make joint inference  for g parameters where g <= p
+				bk + Bs{bk}
+				
+				where 
+				B = t(1-α/2g; n-p)
+				
+				
+**Caution about hidden extrapolations**
+
+When estimating mean response or predicting new observation, it is important that the estimate does not fall outside the scope of the model.
+
+Merely looking at the ranges of each of the predictor variables is not sufficient because the region spanned by these variables might ony contain a point
+within the range of all these variables.
+
